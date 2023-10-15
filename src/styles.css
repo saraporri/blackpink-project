@@ -1,7 +1,65 @@
-h1 {
+body {
+  font-family: roboto;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../images/pinkvenom.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px auto;
+  margin: 0;
+}
+header h1 {
   font-family: Playfair Display;
   font-size: 128px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.5;
+}
+header h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+header a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding: 16px, 32px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #f588bb;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 13px;
+  }
 }
