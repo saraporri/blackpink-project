@@ -13,6 +13,8 @@ body {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("../images/pinkvenom.jpeg");
+  background-position: center center;
+
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -57,11 +59,13 @@ section {
   display: grid;
   grid-template-columns: 4fr 4fr 3fr;
   margin: 0 100px;
+  grid-gap: 64px;
 }
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(0, 0, 0, 0.8)),
     url("../images/bp-footer1.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
@@ -77,7 +81,6 @@ footer p {
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.7;
-  margin-right: 64px;
 }
 footer ul {
   padding: 0;
@@ -106,5 +109,8 @@ footer a {
   }
   header h3 {
     font-size: 13px;
+  }
+  footer {
+    padding: 0;
   }
 }
