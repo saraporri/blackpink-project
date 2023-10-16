@@ -7,7 +7,7 @@ body {
   );
 }
 .container {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 header {
@@ -48,6 +48,51 @@ header a {
   background-color: black;
   color: #f588bb;
   text-decoration: none;
+}
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr 3fr;
+  margin: 0 100px;
+}
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(0, 0, 0, 0.8)),
+    url("../images/bp-footer1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer h4 {
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-right: 64px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
 }
 @media (max-width: 800px) {
   header {
