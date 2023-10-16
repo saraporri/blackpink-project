@@ -1,5 +1,6 @@
 body {
   font-family: roboto;
+  color: white;
   background: radial-gradient(
     circle at 24.1% 68.8%,
     rgb(50, 50, 50) 0%,
@@ -51,15 +52,48 @@ header a {
   color: #f588bb;
   text-decoration: none;
 }
+main {
+  background-color: black;
+}
+main img {
+  max-width: 100%;
+}
+main h2 {
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+main h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
 section {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 100px;
 }
 .grid {
   display: grid;
-  grid-template-columns: 4fr 4fr 3fr;
-  margin: 0 100px;
   grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-footer {
+  grid-template-columns: 4fr 4fr 3fr;
 }
 footer {
   color: white;
@@ -68,7 +102,6 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h4 {
   font-family: Playfair Display;
@@ -110,7 +143,14 @@ footer a {
   header h3 {
     font-size: 13px;
   }
-  footer {
-    padding: 0;
+  section {
+    padding: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  main img {
+    display: none;
   }
 }
