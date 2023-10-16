@@ -8,7 +8,7 @@ body {
   );
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 header {
@@ -25,7 +25,7 @@ header {
 }
 header h1 {
   font-family: Playfair Display;
-  font-size: 128px;
+  font-size: 150px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -33,7 +33,7 @@ header h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1;
 }
 header h3 {
   font-size: 24px;
@@ -44,13 +44,15 @@ header h3 {
 header a {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 3px;
-  padding: 16px, 32px;
+  line-height: 6;
+  padding: 16px 32px;
+  text-align: center;
+  gap: 10px;
   text-transform: uppercase;
   background-color: black;
   color: #f588bb;
   text-decoration: none;
+  border-radius: 100px;
 }
 main {
   background-color: black;
@@ -74,6 +76,7 @@ main h3 {
   opacity: 0.7;
   margin: 0;
 }
+
 main p {
   font-size: 16px;
   font-weight: 400;
@@ -81,9 +84,19 @@ main p {
   opacity: 0.7;
 }
 section {
-  max-width: 1100px;
+  max-width: 100%;
+
   margin: 0 auto;
   padding: 100px;
+}
+section .secondary {
+  background-image: url("../images/favsongs/thealbum.jpeg"), lightgray 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -91,6 +104,54 @@ section {
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+
+  border-radius: 16px;
+  box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
+}
+.card-content {
+  padding: 0 15px;
+}
+.card p,
+.card h4,
+.card h5 {
+  color: black;
+  opacity: 1;
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+.card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+.card h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.card a {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 10px;
+  align-self: stretch;
+  background-color: black;
+  color: #f588bb;
+  font-weight: bolder;
+  border-radius: 100px;
 }
 .grid-footer {
   grid-template-columns: 4fr 4fr 3fr;
@@ -130,7 +191,7 @@ footer a {
   line-height: 24px;
   opacity: 0.7;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
