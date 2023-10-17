@@ -41,7 +41,8 @@ header h3 {
   line-height: 1.5;
   letter-spacing: 5px;
 }
-header a {
+header a,
+.grid-4-columns a {
   font-weight: 600;
   font-size: 16px;
   line-height: 6;
@@ -106,7 +107,42 @@ section .secondary {
   grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns {
+  margin-top: 50px;
+
   grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4-columns {
+  grid-template-columns: 2fr 2fr;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.jisoo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/members/jisoo.jpg");
+}
+.jennie {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/members/jennie.jpg");
+}
+.rose {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/members/rose.png");
+}
+.lisa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/members/lisa.jpg");
+}
+.jisoo,
+.jennie,
+.rose,
+.lisa {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+
+  border-radius: 16px;
+  box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
 }
 .card {
   background-color: white;
@@ -211,7 +247,14 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  main img {
+  .grid-2-columns img {
     display: none;
+  }
+  .members {
+    grid-template-columns: 1fr;
+  }
+  .grid-2-columns h3,
+  .grid-2-columns h2 {
+    text-align: center;
   }
 }
