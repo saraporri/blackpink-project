@@ -251,4 +251,7 @@ footer a {
   .grid-2-columns h2 {
     text-align: center;
   }
+  .grid-3-columns .spotify {
+    grid-template-columns: 1fr 1fr;
+  }
 }
