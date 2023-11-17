@@ -110,6 +110,15 @@ section {
   grid-template-columns: 2fr 2fr;
   margin-top: 70px;
 }
+.member,
+.blackpink {
+  transition: 600ms ease-in-out;
+}
+.member:hover,
+.blackpink:hover {
+  color: #000;
+  text-shadow: 0 0 10px #f588bb;
+}
 .jisoo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("../images/members/jisoo.jpg");
@@ -183,6 +192,13 @@ section {
   font-weight: bolder;
   border-radius: 100px;
 }
+.btn {
+  transition: 1s ease-in-out;
+}
+.btn:hover {
+  background-color: #f588bb;
+  color: #000;
+}
 .grid-footer {
   grid-template-columns: 4fr 4fr 3fr;
 }
@@ -220,6 +236,10 @@ footer a {
   font-weight: 400;
   line-height: 24px;
   opacity: 0.7;
+  transition: 400ms ease-in-out;
+}
+footer a:hover {
+  opacity: 0.4;
 }
 @media (max-width: 900px) {
   header {
@@ -250,8 +270,5 @@ footer a {
   .grid-2-columns h3,
   .grid-2-columns h2 {
     text-align: center;
-  }
-  .grid-3-columns .spotify {
-    grid-template-columns: 1fr 1fr;
   }
 }
